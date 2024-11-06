@@ -1,5 +1,13 @@
 @media screen and (max-width: 767px) {
-
+    .search-field-btn-wrap {
+        flex-direction: column;
+     }
+    .choose-role-btns-wrap {
+        height: calc(100vh - 551px);
+    }
+    .pushy-content ul {
+        padding: 0px;
+    }
     .search-wrap {
         flex-direction: column;
     }
