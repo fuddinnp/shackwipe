@@ -353,10 +353,11 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../images/Dashboard_off.svg);
+    background-image: url(../images/leaderboard-icon.svg);
+    background-repeat: no-repeat;
 
     &:hover {
-      background-image: url(../images/Dashboard_on.svg);
+      background-image: url(../images/leaderboard-icon.svg);
     }
 
   }
@@ -367,10 +368,11 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../images/Devices_off.svg);
+    background-image: url(../images/rate-home-icon.svg);
+    background-repeat: no-repeat;
 
     &:hover {
-      background-image: url(../images/Devices_on.svg);
+      background-image: url(../images/rate-home-icon.svg);
     }
   }
 
@@ -378,10 +380,11 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../images/Users_off.svg);
+    background-image: url(../images/priorities-icon.svg);
+    background-repeat: no-repeat;
 
     &:hover {
-      background-image: url(../images/Users_on.svg);
+      background-image: url(../images/priorities-icon.svg);
     }
   }
 
@@ -389,10 +392,10 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../images/Policy-Center_off.svg);
-
+    background-image: url(../images/invite-icon.svg);
+    background-repeat: no-repeat;
     &:hover {
-      background-image: url(../images/Policy-Center_on.svg);
+      background-image: url(../images/invite-icon.svg);
     }
   }
 
@@ -400,10 +403,10 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../images/Reports_off.svg);
-
+    background-image: url(../images/share-icon.svg);
+    background-repeat: no-repeat;
     &:hover {
-      background-image: url(../images/Reports_on.svg);
+      background-image: url(../images/share-icon.svg);
     }
   }
 
@@ -411,10 +414,11 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(../images/Connectors_off.svg);
+    background-image: url(../images/how-it-work-icon.svg);
+    background-repeat: no-repeat;
 
     &:hover {
-      background-image: url(../images/Connectors_on.svg);
+      background-image: url(../images/how-it-work-icon.svg);
     }
   }
 

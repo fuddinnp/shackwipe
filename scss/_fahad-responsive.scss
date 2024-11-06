@@ -1,4 +1,11 @@
 @media screen and (max-width: 767px) {
+
+    .search-wrap {
+        flex-direction: column;
+    }
+    .home-list-animate-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .profile-box {
         padding: 10px;
     }

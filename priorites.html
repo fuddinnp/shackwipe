@@ -31,7 +31,7 @@
 
 
 
-  <title>Shackwise | Menu </title>
+  <title>Shackwise | Set Proirties </title>
 </head>
 
 <body class="">
@@ -49,25 +49,57 @@
 
       <div class="row m-0 ">
 
-        <div class="col-lg-12 text-center ">
+        <div class="col-lg-12  ">
 
-          <div class="login ">
+          <div class="login proirties-wrap">
+            <br>
+            <div class="login-header mt-4">
+              <h1>Set My Home Priorities</h1>
+              <h3>How important is each characteristic to you?</h3>
+            </div>
+            <div class="login-form col-lg-10 col-sm-12 mt-2 d-flex  flex-column">
 
-            <!-- <div class="login-header">
-              <h1>Login</h1>
-            </div> -->
-            <div
-              class="login-form col-lg-6 col-sm-12 mt-2 d-flex justify-content-center align-items-center flex-column">
-              <div class="login-logo mt-5">
-                <img src="images/shackwise_logo.svg" class="logo">
+              <div class="proirties-option-box">
+                <h4>Location</h4>
+                <div class="proirties-option-items">
+                  <p>Not at All</p>
+                  <p>Somewhat</p>
+                  <p>Extremely</p>
+                </div>
+
+
+                <div class="range-slider range-slider--dotted">
+                  <input class="range-slider__input js-dotted-range-slider" type="range" value="0" min="0" max="4">
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="add-note-wrap">
+                  <p>
+                    Describe the important aspects of location to you for example, proximity to work, public
+                    transportation amenities, the specific town, neighborhood, etc.
+                  </p>
+                  <button class="add-note-btn ">Add Note <img src="images/down-arrow.svg" alt="" class="ml-1"></button>
+
+                </div>
+                <input type="text" name="add-noted" class="note-input" placeholder="Add notes here" id="">
               </div>
 
               <div class="menu-btns-wrap col-lg-8">
-                <a href="#" class="btn-round">Set My priorities</a>
+                <a href="#" class="btn-round">Set your priorities first</a>
                 <a href="#" class="btn-round">See How ShackWise Works</a>
                 <a href="#" class="btn-round disabled">Rate a Home</a>
                 <a href="#" class="btn-round disabled">View the Leaderboard</a>
-                <a href="#" class="btn-round">Invite Partner / Agent</a>
+                <a href="#" class="btn-round disabled      ">Connect with Partner / Agent</a>
               </div>
 
 
@@ -103,7 +135,8 @@
 
 
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -113,6 +146,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
+  <script src="js/script.js"></script>
 
 
 
