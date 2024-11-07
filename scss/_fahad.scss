@@ -166,7 +166,7 @@
     display: flex;
     gap: 15px;
   background: #4BADE5;
-  padding: 12px 25px;
+  padding: 6px 25px;
   font-size: 14px;
   font-weight: 500;
   color: #fff;
@@ -181,8 +181,8 @@
   overflow: hidden;
 
   img {
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     border-radius: 50%;
 }
 
@@ -197,7 +197,7 @@
 .search-field-wrap {
   border: 1px solid #cbc9c9;
   border-radius: 25px;
-  padding: 10px 35px 10px 20px ;
+  padding: 10px 15px 10px 20px ;
   width: 100%;
   position: relative;
   display: flex;
@@ -216,6 +216,10 @@
     border-radius: 25px;
     font-size: 14px;
     font-family: "Roboto";
+
+    &:hover{
+      background: $theme-secondary-dark-color;
+    }
 }
 .search-wrap {
   display: flex;
@@ -242,7 +246,7 @@ input:focus-visible {
   /* padding-top: 50px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px 60px;
+  gap: 30px;
 }
 .list-box-item {
   border: 1px solid #d5d5d5;
@@ -352,6 +356,11 @@ input:focus-visible {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+
+  &:hover{
+    color: $theme-secondary-dark-color;
+    text-decoration: none;
+  }
 }
 .home-details-wrap {
   display: flex;
@@ -360,4 +369,60 @@ input:focus-visible {
   font-size: 14px;
   font-weight: 500;
   margin: 10px 0px;
+}
+
+/**
+  * Toggle
+**/
+.s-toggle-pill-wrapper {
+  background-color: #d9d9d9;
+  // box-shadow: 0 3px 6px 1px rgba(83,76,150,0.12);
+  border-radius: 24px;
+  padding: 4px;
+  position: relative;
+  z-index: 0;
+  max-width: 500px;
+  display: flex;
+.s-toggle-selector {
+  background-color: #4BADE5;
+  color: #fff;
+  border-radius: 20px;
+  height: 44px;
+  width: 207px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  transition: all 0.25s ease-in-out;
+}
+.s-toggle-option {
+  flex-basis: 50%;
+  padding: 8px 20px 4px 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  &:first-child {
+    flex-basis: 50%;
+  }
+  &:last-child {
+    flex-basis: 50%;
+  }
+  input {
+    width: 0;
+    opacity: 0;
+  }
+  label {
+    span {
+      font-family: "Helvetica Neue";
+      font-weight: normal;	
+      letter-spacing: 0.32px;	
+      line-height: 24px;
+    }
+    input:checked + span {
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
 }

@@ -111,6 +111,8 @@ $theme-primary-color: #202020;
 
 $theme-secondary-color:  #4BADE5 ;
 
+$theme-secondary-dark-color:  #3f9acf ;
+
 $theme-gray-color:  #89909e ;
 
 
@@ -3850,9 +3852,10 @@ table .bold-heading {
   padding: 18px 56px;
   border: none !important;
 
-  :hover{
+  &:hover{
     color: #fff !important;
     text-decoration: none !important;
+    background: $theme-secondary-dark-color;
   }
 }
 .btn-primary-modal {
@@ -4316,6 +4319,7 @@ align-items: center;
   margin-left:0px;
   font-size: 0.8rem;
   color:#9CA3AF;
+  margin-bottom: 4px;
 }
 .login-form h3 span {
   color: $theme-secondary-color;
@@ -4328,18 +4332,33 @@ align-items: center;
   margin:10% auto 0%;
 }
 .login input[type="text"],
-.login input[type="password"],
-.login select {
+.login input[type="password"]
+ {
   // max-width:400px;
 	width: 100%;
     line-height: 2.6rem;
-    margin: 0.3rem 0rem 0.8rem;
+    margin: 0.3rem 0rem 1.2rem;
     border-radius: 50px;
     border: 2px solid #d0d5dd;
     outline: none;
-    padding-left: 30px;
+    padding-left: 22px;
     position: relative;
 }
+.customSelect {
+  display: inline-block;
+  width: 100%;
+  background-image: url(../images/down-arrow-b.svg) !important;
+  background-repeat: no-repeat;
+  background-position-x: 93%;
+  background-position-y: 16px;
+  margin: 0.3rem 0rem 0.8rem;
+  border-radius: 50px;
+  border: 2px solid #d0d5dd;
+  padding:6px 10px 6px 22px;
+  height: 46px;
+  appearance: none;
+      
+  }
 .login-form input[type="button"] {
   // height:30px;
   width: 55%;
@@ -4351,6 +4370,25 @@ align-items: center;
     color: #fff;
     padding: 10px;
     font-size: 0.8rem;
+    
+    &:hover{
+      background: $theme-secondary-dark-color;
+    }
+}
+.login-button {
+  width: 55%;
+  background: #4BADE5;
+  border: 1px solid #4BADE5;
+  border-radius: 50px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.8rem;
+
+  &:hover{
+    background: $theme-secondary-dark-color;
+  }
 }
 .login .forgot-wrap::after {
   // content: url(../images/eye-icon.svg);

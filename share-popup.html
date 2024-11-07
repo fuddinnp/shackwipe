@@ -110,44 +110,42 @@
           <div class="model-inner-window" style="height: auto !important;">
 
             <div class="modal-header justify-content-center">
-              <h3>Connect with Partner / Agent</h3>
+              <h3>Share / Compare</h3>
 
             </div>
 
-            <div class="login mt-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
 
+                  <!--- toggle -->
+                  <div class="s-toggle-pill-wrapper mt-5">
+                    <div class="s-toggle-selector"></div>
 
-              <div class="login-form mt-0">
+                    <div class="s-toggle-option">
+                      <label>
+                        <input type="radio" name="liveToggle" id="live" checked />
+                        <span>Share</span>
+                      </label>
+                    </div>
 
-                <h3>Full Name <span>*</span></h3>
-                <input type="text" placeholder="Username" /><br>
+                    <div class="s-toggle-option">
+                      <label>
+                        <input type="radio" id="time-shifted" name="liveToggle" label="Time-shifted Shows" />
+                        <span>Compare</span>
+                      </label>
+                    </div>
 
-                <h3>Email address <span>*</span></h3>
-                <input type="text" placeholder="Email" /><br>
-                <div class="d-flex justify-content-between align-items-center forgot-wrap">
-                  <h3>Select</h3>
-                  <!-- <a href="#" class="forgot-text">Forgot Password?</a> -->
+                  </div>
+                  <!-- /toggle -->
+
                 </div>
-                <!-- <input type="password" class="password-input" placeholder="Password" /> -->
-                <select name="" id="" class="customSelect">
-                  <option value="">select item</option>
-                  <option value="">select item</option>
-                  <option value="">select item</option>
-                  <option value="">select item</option>
-                </select>
-
-
-                <!-- <label class="checkbox checkbox-wrap">
-                  <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Keep me signed in
-                </label> -->
-                <br />
-                <div class="text-center mt-5">
-                  <input type="button" value="Submit" class="login-button" />
-                </div>
-
-
-
               </div>
+            </div>
+
+            <br />
+            <div class="text-center mt-4">
+              <input type="button" value="Submit" class="login-button" />
             </div>
 
 
@@ -179,7 +177,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
+    <script>
+      var toggleOpts = {
+        wrapper: $('.s-toggle-pill-wrapper'),
+        field: $('.s-toggle-option input'),
+        selector: $('.s-toggle-selector'),
+      };
 
+      toggleOpts.field.on('change', function (evt) {
+        if ($(this).is(':checked')) {
+          var $toggleItem = $(this).closest('.s-toggle-option');
+          var pos = $toggleItem.position();
+          var width = $toggleItem.outerWidth();
+          console.log(pos);
+          toggleOpts.selector.css({
+            'left': pos.left,
+            'width': width
+          });
+        }
+      });
+    </script>
 
 
 </body>
