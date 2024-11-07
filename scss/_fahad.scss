@@ -426,3 +426,13 @@ input:focus-visible {
   }
 }
 }
+.error-field {
+  border: 1px solid #eb3a04 !important;
+}
+.error-txt {
+  color: #eb3a04;
+    font-size: 0.8rem;
+    margin: -12px 0px 0px 0px;
+    padding: 0px 12px;
+    text-align: left;
+}
