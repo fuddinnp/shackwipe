@@ -370,6 +370,46 @@ input:focus-visible {
   font-weight: 500;
   margin: 10px 0px;
 }
+.signal-list-row .list-box-wrap .img-box {
+  padding: 0px;
+  padding-bottom: 0px;
+  height: 350px;
+  margin-bottom: 8px;
+}
+.signal-list-row .list-box-wrap .img-box .img-fluid {
+  height: 350px;
+    max-width: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.signal-list-row .rate-rating-wrap h3 {
+  font-size: 36px;
+  color: #3e3e3e;
+}
+.signal-list-row .home-details-wrap {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.signal-list-row .list-box-wrap .card-body h4 {
+ color: #464646;
+}
+.property-details-right {
+  padding: 0px 25px !important;
+}
+.property-details-right h2 {
+  font-size: 24px;
+  font-family: "Roboto";
+  margin-bottom: 25px;
+}
+.property-details-right-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 /**
   * Toggle

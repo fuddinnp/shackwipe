@@ -4370,7 +4370,7 @@ align-items: center;
     color: #fff;
     padding: 10px;
     font-size: 0.8rem;
-    
+
     &:hover{
       background: $theme-secondary-dark-color;
     }
@@ -4589,9 +4589,12 @@ input[type="checkbox"]::before {
 .proirties-option-box input.note-input {
   color: #202020;
   border-radius: 4px !important;
+  border: 1px solid #bebebe;
   line-height: 1.8rem !important;
   padding-left: 8px !important;
   font-size: 0.8rem !important;
+  width: 100%;
+  margin: 0px;
 }
 .add-note-btn {
   background: #fff;
@@ -4600,7 +4603,8 @@ input[type="checkbox"]::before {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 6px 10px;
-  width: 28%;
+  width: auto;
+  flex: 1 0 auto;
 }
 
 .range-slider {
