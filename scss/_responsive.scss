@@ -990,7 +990,7 @@
 
     header {
         justify-content: space-between;
-        flex-direction: row-reverse;
+        // flex-direction: row-reverse;
     }
 
 
@@ -1012,6 +1012,9 @@
 
     .pushy-content ul li .profile-name-mobile {
         margin-left: 6px !important;
+        font-size: 16px;
+        font-weight: 600;
+        color: #202020;
     }
 
 
