@@ -237,6 +237,10 @@ header {
     &:hover {
       color: $theme-primary-color;
       cursor: pointer;
+    }
+
+    .active-link {
+        border-bottom: 2px solid $theme-secondary-color;
 
     }
 
@@ -4516,19 +4520,23 @@ input[type="checkbox"]::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal-wrap {
   background: #fff;
     padding: 0px;
     width: 60%;
     margin: 4% auto;
-    height: calc(100vh - 250px);
+    height: auto;
     position: relative;
 }
 .model-inner-window {
   padding: 60px;
   overflow: auto;
-  height: calc(100vh - 250px);
+  // height: calc(100vh - 250px);
+  height: auto;
   position: relative;
 }
 .close-modal {
