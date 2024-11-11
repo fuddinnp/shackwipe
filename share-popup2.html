@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+  <script src="js/perfect-scrollbar.js"></script>
+
+
+
+
+  <title>Shackwise | Invite Partner / Agent </title>
+</head>
+
+<body class="">
+
+
+
+
+
+
+  <div class="container-fluid main-wrapper p-0">
+
+
+    <div class="container">
+
+
+      <div class="row m-0 ">
+
+        <div class="col-lg-12 text-center ">
+
+          <div class="login ">
+
+            <!-- <div class="login-header">
+              <h1>Login</h1>
+            </div> -->
+            <div
+              class="login-form col-lg-6 col-sm-12 mt-2 d-flex justify-content-center align-items-center flex-column">
+              <div class="login-logo mt-5">
+                <img src="images/shackwise_logo.svg" class="logo">
+              </div>
+
+              <div class="menu-btns-wrap col-lg-8">
+                <a href="#" class="btn-round">Set your priorities first</a>
+                <a href="#" class="btn-round">See How ShackWise Works</a>
+                <a href="#" class="btn-round disabled">Rate a Home</a>
+                <a href="#" class="btn-round disabled">View the Leaderboard</a>
+                <a href="#" class="btn-round disabled      ">Connect with Partner / Agent</a>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <br /><br /><br />
+    <div class="container-fluid footer text-center">
+      <p>Copyright © 2024 Shackwise | All Rights Reserved </p>
+    </div>
+
+
+
+    <!-- PopUp html -->
+    <div>
+
+
+
+
+
+
+      <!--Overlay black with opacity-->
+      <div class="overlay">
+
+        <div class="modal-wrap col-lg-4 col-sm-10" style="height: auto !important;border-radius: 10px;">
+          <button aria-label="Close" class="close-modal" x-on:click="isModalOpen=false">
+            <img src="images/close-modal.svg" alt="">
+          </button>
+          <div class="model-inner-window" style="height: auto !important;">
+
+            <div class="modal-header justify-content-center">
+              <h3>Share / Compare</h3>
+
+            </div>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+
+                  <!--- toggle -->
+                  <div class="s-toggle-pill-wrapper mt-5">
+                    <div class="s-toggle-selector"></div>
+
+                    <div class="s-toggle-option">
+                      <label>
+                        <input type="radio" name="liveToggle" id="live" checked />
+                        <span>Share</span>
+                      </label>
+                    </div>
+
+                    <div class="s-toggle-option">
+                      <label>
+                        <input type="radio" id="time-shifted" name="liveToggle" label="Time-shifted Shows" />
+                        <span>Compare</span>
+                      </label>
+                    </div>
+
+                  </div>
+                  <!-- /toggle -->
+
+                  <br>
+                  <div>
+                    <p>
+                      <b class="m-0">Share mode</b> lets you and your partner work together by entering information into
+                      the same
+                      form, creating a seamless and unified experience. This way, both of your inputs are captured in
+                      one
+                      place,
+                      making the decision-making process smoother and more collaborative.
+                    </p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <div class="text-center mt-4">
+              <input type="button" value="Submit" class="login-button" />
+              <br><br>
+              <a href="#" class="login-button-text mt-3">Cancel</a>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+      var toggleOpts = {
+        wrapper: $('.s-toggle-pill-wrapper'),
+        field: $('.s-toggle-option input'),
+        selector: $('.s-toggle-selector'),
+      };
+
+      toggleOpts.field.on('change', function (evt) {
+        if ($(this).is(':checked')) {
+          var $toggleItem = $(this).closest('.s-toggle-option');
+          var pos = $toggleItem.position();
+          var width = $toggleItem.outerWidth();
+          console.log(pos);
+          toggleOpts.selector.css({
+            'left': pos.left,
+            'width': width
+          });
+        }
+      });
+    </script>
+
+
+</body>
+
+</html>
