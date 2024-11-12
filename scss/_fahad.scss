@@ -394,8 +394,21 @@ input:focus-visible {
   font-weight: 500;
   margin: 10px 0px;
 }
+.signal-list-row .home-details-wrap div {
+  display: flex;
+  gap: 20px;
+}
 .signal-list-row .list-box-wrap .card-body h4 {
  color: #464646;
+ font-size: 24px;
+}
+.signal-list-row .list-box-wrap .card-body .card-text {
+  font-size: 20px;
+}
+.address-icon-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .property-details-right {
   padding: 0px 25px !important;
@@ -410,7 +423,9 @@ input:focus-visible {
   flex-direction: column;
   gap: 30px;
 }
-
+.proirties-option-box {
+  margin: 1.5rem 0rem !important;
+}
 /**
   * Toggle
 **/
@@ -478,4 +493,41 @@ input:focus-visible {
 }
 
 //progress bar css
+.progress-wrap {
+  position: relative;
+  overflow: inherit !important;
+  height: 6px !important;
+  margin-top: 32px;
+}
 
+.progress-bar {
+  background-color: #4bade5 !important;
+}
+.progress-bar-yellow {
+  background-color: #fcd554 !important;
+}
+.emoji-icon-1 {
+  position: absolute;
+  top: -26px;
+  left: 25%;
+}
+.emoji-icon-2 {
+  position: absolute;
+  top: -26px;
+  left: 49%;
+}
+.emoji-icon-3 {
+  position: absolute;
+  top: -26px;
+  left: 74%;
+}
+.emoji-icon-4 {
+  position: absolute;
+  top: -26px;
+  left: 97%;
+}
+// .emoji-icon-5 {
+//   position: absolute;
+//   top: -26px;
+//   left: 50%;
+// }
