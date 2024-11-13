@@ -1,4 +1,7 @@
 @media screen and (max-width: 767px) {
+    .compare-option-box-wrap h4, .compare-option-box-wrap .rang-slider-wrap {
+        padding-left: 0px;
+      }
     .proirties-wrap .login-header h1 {
         font-size: 1.8rem;
     }
@@ -16,6 +19,9 @@
     .add-note-btn {
         width: auto;
     }
+    // .compare-option-box-wrap .add-note-wrap {
+    //     flex-direction:row ;
+    // }
     .signal-list-row .list-box-wrap .img-box, .signal-list-row .list-box-wrap .img-box .img-fluid {
         height: 250px;
     }
