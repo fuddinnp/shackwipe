@@ -429,6 +429,21 @@ input:focus-visible {
 .compare-option-box-wrap h4, .compare-option-box-wrap .rang-slider-wrap {
   padding-left: 60px;
 }
+.compare-option-box-wrap .progress-wrap {
+  flex: 1 0 auto;
+  margin: 0px;
+}
+.progress-bar-img-wrap {
+  color: #6b6b6b;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.compare-option-box-wrap .progress-bar-img-wrap {
+  margin-top: 20px !important;
+}
 /**
   * Toggle
 **/
@@ -508,6 +523,11 @@ input:focus-visible {
 }
 .progress-bar-yellow {
   background-color: #fcd554 !important;
+}
+.emoji-icon-0 {
+  position: absolute;
+  top: -26px;
+  left: 0%;
 }
 .emoji-icon-1 {
   position: absolute;

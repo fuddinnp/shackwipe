@@ -19,6 +19,13 @@
     .add-note-btn {
         width: auto;
     }
+    .progress-bar-img-wrap {
+        flex-direction: column;
+    }
+    .compare-option-box-wrap .progress-wrap {
+        margin-top: 10px;
+    width: 100%;
+    }
     // .compare-option-box-wrap .add-note-wrap {
     //     flex-direction:row ;
     // }
@@ -569,6 +576,9 @@
     }
     .proirties-option-box {
         margin: 0.6rem 0rem !important;
+    }
+    .compare-option-box-wrap {
+        margin: 0.6rem 0rem 3rem !important;
     }
 }
 
